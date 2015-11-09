@@ -1,0 +1,114 @@
+/**
+*	This file contains core variables and mixins for this project.
+*	All theme related variables are contained within _ui-theme.scss file 
+*/
+
+
+
+/*
+  ===================================================================
+	VARIABLES
+  ===================================================================
+*/
+
+/**
+*	Fonts
+*/
+
+$font-normal: "Roboto", sans-serif;
+$font-lobster: "Lobster", sans-serif;
+$font-body: 'Roboto', Arial, Helvectica, Tahoma, sans-serif;
+//$font-light: "Roboto", sans-serif;
+//$font-medium: "Roboto", sans-serif;
+
+
+$font-size-xsmall: 0.824em; // 14px
+$font-size-small: 1em; // 16px
+$font-size-default: 1.1em; // 17px
+$font-size-medium: 1.235em; // 21px
+$font-size-large: 2.059em; // 35px  
+$font-size-xlarge: 2.824em; // 48px
+$font-size-xxlarge: 4.118em; // 70px
+
+$baseline: 1rem * 1.4;
+$default-spacing: 1rem;
+
+$default-radius: 5px;
+
+/**
+*	Media queries breakpoints
+*/
+
+$break-large: 1199px; // large desktops >1200
+$break-medium: 992px; // desktops >992
+$break-small: 768px; // tablets 
+$break-xsmall: 480px; // phones
+$break-xxsmall: 320px; // phones < 320
+
+
+
+/*
+  ===================================================================
+	MIXINS
+  ===================================================================
+*/
+
+@mixin transition($prop, $duration: .2s, $effect: ease-in-out) {
+    -webkit-transition: $prop $duration $effect; 
+    -moz-transition: $prop $duration $effect;
+    -o-transition: $prop $duration $effect;
+    transition: $prop $duration $effect;
+}
+
+@mixin custom-font-size($font-size, $increase, $modifier: increase) {
+    @if $modifier == increase {
+        font-size: $font-size + $increase;
+    }
+    @else if $modifier == decrease {
+        font-size: $font-size - $increase;
+    }
+}
+
+@mixin shadow($h-shadow, $v-shadow, $blur, $spread, $color: #0e0e0e) {
+    -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+    box-shadow: $h-shadow $v-shadow $blur $spread $color;
+}
+
+@mixin btn-outline($outline-color) {
+    border: 1px solid $outline-color;
+}
+
+@mixin btn-radius($btn-height) {
+    border-radius: $btn-height / 2;
+}
+
+// Set a rem font size with pixel fallback
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+//  Usage:
+//  @include font-size(14px)
+
+
+
+// Transitions
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//  Usage:
+//  @include transition(color .3s ease);
+

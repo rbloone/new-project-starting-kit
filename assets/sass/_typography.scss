@@ -1,0 +1,203 @@
+/*
+  ===================================================================
+	IMPORT CUSTOM FONTS
+  ===================================================================
+*/
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-stretch: condensed;
+    src: url(https://fonts.googleapis.com/css?family=Roboto:300,500,400&subset=latin,cyrillic); /* Safari, Android, iOS */
+}
+
+
+/*
+  ===================================================================
+    GENERAL FONT STYLES
+  ===================================================================
+*/
+
+ul, li {
+  color: $color-white;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  font-family: $font-normal;
+  color: $color-white;
+  font-weight: 300;
+}
+
+h1 {
+  @include font-size(72px);
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+p {
+ font-size: $font-size-default; 
+}
+
+header {
+  
+  h1 {
+    @extend h1;
+    margin: 140px 0 15px;
+    font-family: $font-lobster;
+    @media screen and (max-width: $break-medium) {
+     margin: 40px 0 15px; 
+    }
+    
+    @media screen and (max-width: $break-small) {
+      margin: -10px 0 10px;
+    }
+    
+    span {
+     color: $color-main;  
+    }
+  }
+
+  p {
+    margin: 0 0 60px;
+    font-size: $font-size-medium;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  }
+}
+
+h2 {
+  //font-size: 44px;
+  @include font-size(66px);
+  
+  @media screen and (max-width: $break-xsmall) {
+    @include font-size(42px);
+    font-weight: 400;
+    }
+}
+
+h4 {
+  @include font-size (42px);
+  margin-bottom: 20px;
+  margin-top: 25px;
+  
+  @media screen and (max-width: $break-small) {
+    text-align: center;
+  }
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+#features p {
+  color: $color-black;
+  @include font-size (26px);
+  line-height: 28px;
+  margin-bottom: 40px;
+  h3 {
+  color: $color-black;
+  }
+}
+
+/**
+*     Navigation
+**/
+
+.nav > li > a.active {
+  background-color: transparent;
+  border-bottom: $color-main solid 3px;
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+  border-bottom: $color-main solid 3px;
+}
+
+.nav > li > a {
+  color: $color-white;
+  font-weight: 500;
+  font-family: $font-normal;
+  padding: 15px 30px 14px 30px;
+}
+
+#divider
+  h2, p {
+    color: $color-white;
+  }
+  p {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.copyright {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
+/**
+*    Colors
+*/
+
+.text-white {
+    color: $color-white !important;
+}
+
+.text-gray {
+    color: darken($color-gray, 15%) !important;
+}
+
+.text-black {
+    color: $color-black !important;
+}
+
+.text-red {
+    color: $color-main !important;
+}
+
+/**
+*    Sizing
+*/
+
+.text-small {
+  font-size: $font-size-xsmall;
+}
+
+.text-medium {
+  font-size: $font-size-medium;
+}
+
+.text-large {
+  font-size: $font-size-large;
+}
+
+
+/**
+*    Line heights
+*/
+
+.lh-44 {
+    line-height: 44px;
+}
+
+.lh-51 {
+    line-height: 51px;
+}
+
+
+/**
+*    Helpers
+*/
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.w-b {
+    word-break: break-word;
+}

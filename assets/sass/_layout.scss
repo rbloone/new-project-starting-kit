@@ -1,0 +1,63 @@
+/*
+  ===================================================================
+	GENERAL LAYOUT
+  ===================================================================
+*/
+
+body {
+  background-color: salmon;
+
+  h1 {
+    color: darkcyan; 
+  }
+
+  p {
+    font-size: 22px;
+    color: burlywood;
+  }
+}
+
+img {
+ max-width: 60%; 
+}
+
+/**
+*    Navigation top bar 
+**/
+
+.navbar {
+  background: $color-main;
+  border: none;
+  border-radius: 0;
+}
+
+.nav>li>a {
+  color: aqua;
+  background-color: bisque;
+}
+
+.nav>li>a:hover, :focus, :active, :visited {
+   border-bottom: 0px; 
+}
+
+
+/**
+*    Header
+**/
+
+
+
+/**
+*    Footer
+**/
+
+
+/*
+  ===================================================================
+	INNER PAGES LAYOUT
+  ===================================================================
+*/
+
+
+
+

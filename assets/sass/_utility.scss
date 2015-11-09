@@ -1,0 +1,93 @@
+/*
+  ===================================================================
+	UTILITY CLASSES
+  ===================================================================
+*/
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+.visible {
+	visibility: visible !important;
+	display: block !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-border {
+	border: none !important;
+}
+
+.p-a {
+	position: absolute;
+}
+
+.p-r {
+	position: relative;
+}
+
+.d-b {
+	display: block !important;
+}
+
+.d-ib {
+	display: inline-block !important;
+}
+
+.d-tbl {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.d-tbl-row {
+	display: table-row;
+}
+
+.d-tbl-c {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.img-center {
+ margin: 0 auto;
+}
+
+
+.full-width {
+	width: 100% !important;
+}
+
+.lh-normal {
+	line-height: normal;
+}
+
+.no-border {
+	border: 0 !important;
+}
+
+.va-top {
+	vertical-align: top !important;
+}
+
+.va-middle {
+	vertical-align: middle !important;
+}
+
+.va-bottom {
+	vertical-align: bottom !important;
+}
+
+.media-margin {
+	@media screen and (max-width: $break-medium) {
+		margin-bottom: 1em;
+	}
+}

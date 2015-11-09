@@ -1,0 +1,38 @@
+/*
+  ===================================================================
+	BUTTON STYLES
+  ===================================================================
+*/
+/*
+
+.btn {
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 50px;
+  background: $color-main;
+  border: $color-main 3px solid;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 15px;
+  font-weight: 500;
+  @include transition(.2s ease);
+  max-width: 100%;
+  
+  @media screen and (max-width: $break-xsmall) {
+   padding: 12px 40px;
+    margin: 10px auto;
+  }
+  
+  &:hover, :focus, :active {
+    @include transition(.2s ease);
+    color: $color-white;
+    background: darken( $color-main, 7% );
+    border-color: darken( $color-main, 7% );
+    
+    }
+}
+*/
