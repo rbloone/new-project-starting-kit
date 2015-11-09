@@ -1,14 +1,15 @@
-# Gulp Starter
-A starter kit for your front-end builds.
+# Gulp starter kit
+ Starter kit for new projects with Gulp.js
 
-- Compiles, autoprefixes and minimizes your Sass (can easily switch to SCSS or LESS)
-- Uglifys your JS
-- Compresses your Images
-- Generates a BrowserSync URL for you to access.
+- Compiles, autoprefixes, normalizes and minimizes SCSS
+- Uglifys JS
+- Compresses Images
+- Generates a BrowserSync URL
+- Watches changes in project files
 
 ### Getting Started
-Clone: `http://github.com/dope/gulp-starter.git`
+1) Clone this project
 
-Open terminal and run: `npm install` | This will build your packages
+2) Open terminal and run: `npm install` - this will build your packages
 
-Then run: `gulp` | This will build your assets and generate your BrowserSync URL
+3) Run: `gulp` - this will build your assets and generate your BrowserSync URL
